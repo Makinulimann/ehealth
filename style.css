@@ -1,0 +1,157 @@
+.navbar {
+    transition: all 0.3s;
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.artikel .card {
+    flex: 0 0 calc(24% - 15px);
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.obat .card {
+    flex: 0 0 calc(16% - 10px);
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.obat .card:nth-child(6n) {
+    margin-right: 0;
+}
+
+
+
+/* Gaya untuk tampilan tablet (lebar layar <= 767px) */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 200px;
+        /* Atur tinggi yang diinginkan untuk tablet */
+    }
+
+    .artikel .card {
+        flex: 0 0 calc(50% - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .artikel .card:last-child {
+        margin-right: 0;
+    }
+
+    .obat .card {
+        flex: 0 0 calc(33.33% - 10px);
+        /* Tetapkan kembali ke 33.33% untuk 3 kolom */
+        margin-right: 10px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .obat .card:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .navbar-collapse {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+}
+
+/* Gaya untuk tampilan ponsel (lebar layar <= 575px) */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 150px;
+        /* Atur tinggi yang diinginkan untuk ponsel */
+    }
+
+    .artikel .card,
+    .obat .card {
+        flex: 0 0 calc(100% - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .artikel .card:last-child,
+    .obat .card:last-child {
+        margin-right: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        margin-bottom: 10px;
+        /* Atur sesuai kebutuhan */
+    }
+
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#carouselObat .carousel-inner {
+    display: flex;
+    padding: 1em;
+    margin-right: -5px;
+}
+
+#carouselObat .carousel-item {
+    display: block;
+    margin-right: 10px;
+    flex: 0 0 calc(100%/6);
+}
+
+
+#carouselObat .card {
+    width: 100%;
+    height: 150px;
+    margin: 0.5 em;
+}
+
+#carouselObat .card:not(:last-child) {
+    margin-right: 10px;
+    /* Menambahkan margin kanan pada semua kartu kecuali yang terakhir */
+}
+
+#carouselObat .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/* p*/
+
+
+#carouselLayanan .carousel-inner {
+    display: flex;
+    padding: 1em;
+    margin-right: -5px;
+}
+
+#carouselLayanan .carousel-item {
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+    flex: 0 0 calc(100%/6);
+}
+
